@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Guessing Game </title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+       <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+   </head>  
+    <body>
+        <div class="container-fluid">
+            <div id="app_container"><div id="app_container_overlay">
+                <div id="header">
+                    <div id="title"> Guessing Game!</div>
+                    <div id="subtitle">A Grace Hopper Program Foundations Project</div>
+                </div>  
+                <div id="app">
+                    <div id="explanation_ln1"> Step right up!</div>
+                    <div id="explanation_ln2">Guess a number between 1 and 100...</div>
+                        <div id="input_field">
+                            <div id="input_space">
+                                <form>
+                                <input id="number" type="text" placeholder="??"/>
+                                </form>
+                            </div>
+                            <button id="submit" class="btn btn-info">GO!</button>
+                        </div>
+
+                    <div id="past_guess_field">
+                        <div id="guess">You have guessed: </div>
+                        <div id="guesses">
+                            <div class="box" id = "box_1">-</div>
+                            <div class="box" id = "box_2">-</div>
+                            <div class="box" id = "box_3">-</div>
+                            <div class="box" id = "box_4">-</div>
+                            <div class="box" id = "box_5">-</div>
+                        </div> 
+                    </div>
+
+                    <div id="buttons_field">
+                        <button class="btn btn-info" id="button_1">RESET</button>
+                        <button class="btn btn-info" id="button_2">HINT</button>
+                       <!-- <button class="btn btn-info" id="button_3">BUTTON 3</button>
+                        <button class="btn btn-info" id="button_4">BUTTON 4</button>-->
+                    </div>
+                </div>
+            </div></div>
+
+            <div id="footer">
+                <div id="about">A Student Project</div>
+                <div class="row">
+                    <div id="fullstack" class="col-md-6"><img src="fullstack_academy.png" class="img-responsive"  id="fullstack" alt = "Fullstack Logo" ></div>
+                    <div id="gh" class="col-md-6"><img src="grace_hopper_academy.png" class="img-responsive" id="hg" alt="Grace Hopper Logo"></div>
+                </div> 
+            </div>
+        </div>
+       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
+       <script type="text/javascript" src="GuessingGame.js"></script>
+    </body>
+</html>

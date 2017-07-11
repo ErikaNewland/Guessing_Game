@@ -1,0 +1,155 @@
+#header{
+    display: block;  
+    text-align: center; 
+    padding-top: 15px;
+}
+
+#title {
+    font-family: monospace;
+    font-size: 55px; 
+    font-stretch: ultra-expanded;
+    font-weight: bold;
+}
+
+#subtitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+#app_container{
+    background-image: url(image_options/img3.jpg);
+    width:100%;
+}
+
+#app_container_overlay {
+    background-color: rgba(256, 256, 256, 0.8);
+    width: 100%  ;
+
+}
+
+#app {
+    text-align: center;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#explanation_ln1, #explanation_ln2 {
+    font-family: monospace;
+    font-size: 25px;
+}
+
+#explanation_ln1 {    
+    padding-top:70px;
+
+}
+
+ #input_space {
+     display: block;
+ }
+
+
+#input_button, #input_space {
+    display: inline-block;
+}
+
+#number {
+    margin-top: 15px;
+    border-radius: 100%;
+    height: 175px;
+    width: 175px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    vertical-align: middle;
+    font-size: 50px;
+    border-width: 2px;
+    border-color:black;
+}
+
+ #input_button {
+     width: auto;
+     margin-top: 10px;
+ }
+
+ #submit  {
+     font-size: 20px;
+     height: 90px;
+     width: 90px;
+     vertical-align: bottom;
+     margin-left: -30px;
+     position: relative;
+     text-align: center;
+ }
+
+
+
+ #guess {
+     margin-top: 30px;
+     text-align: left;
+     margin-left: 25px;
+     font-family: cursive;
+     font-size: 20px;
+     margin-bottom: 5px;
+     font-weight:bolder;
+ }
+
+.box {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    background-color: white;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    align-content: center;
+}
+
+#buttons_field {
+    margin-top: 30px;
+    padding-bottom: 15px;
+}
+
+#button_1, #button_2, #button_3, #button_4, #submit {
+    background-color: rgb(172, 199, 241);
+    color: #3c3b3b;
+    width: 95px;
+}
+
+#footer {
+    padding-top: 25px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: gray;
+    text-align: center;
+}
+
+#about{ 
+    margin-top: 15px;
+}
+
+
+#gh, #fullstack {
+    width: 200px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#fullstack {
+    margin-right: 50px;
+    float: right;
+}
+
+#gh{
+    float: left;
+}
+
+
+
+
+
+
