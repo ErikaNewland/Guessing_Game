@@ -81,6 +81,7 @@ function inputAction(game){
     var value=Number($('#number').val());
     $('#number').val("")
     var output=game.playersGuessSubmission(value);
+    console.log("after var output");
     $('#explanation_ln1').text(output);
     if(game.isLower()){
         $('#explanation_ln2').text('Try a higher number!');
@@ -102,8 +103,10 @@ $(document).ready(function(){
         inputAction(game);
     });
 
-    $('#number').on('keypress', function(event){
+    $('#number').bind('keypress', function(event){
+        console.log("this is the event", event);
         if(event.which==13){
+            event.preventDefault();
             inputAction(game);
         }
     });
