@@ -75,13 +75,20 @@ function newGame(){
     return new Game;
 }
 
+function loop(div) {
+   for (var i=0; i<4; i++){
+        div.animate({height: '80px', width: '80px', opacity: '0.4'}, "slow");
+        div.animate({height: '65px', width: '65px', opacity: '1'}, "slow");
+   }
+}
+
 
 function inputAction(game){
+    console.log(game)
     $('#explanation_ln1').text('')
     var value=Number($('#number').val());
     $('#number').val("")
     var output=game.playersGuessSubmission(value);
-    console.log("after var output");
     $('#explanation_ln1').text(output);
     if(game.isLower()){
         $('#explanation_ln2').text('Try a higher number!');
@@ -90,7 +97,9 @@ function inputAction(game){
 
     }
     $('#box_'+game.pastGuesses.length).text(game.pastGuesses[game.pastGuesses.length-1]);
-    if(output==='You Lose.' || output=="You win!") {
+    if(output==='You Lose.' || output=="You Win!") {
+        var div = $(".box");
+        loop(div);
         $('#explanation_ln2').text('Click the RESET button!');
         $('#submit, button_2').prop('disabled', true);
     }
@@ -104,7 +113,6 @@ $(document).ready(function(){
     });
 
     $('#number').bind('keypress', function(event){
-        console.log("this is the event", event);
         if(event.which==13){
             event.preventDefault();
             inputAction(game);
